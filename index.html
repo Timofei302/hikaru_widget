@@ -1,0 +1,98 @@
+<title>Hikaru's Aizawa Desktop Widget</title>
+<body>
+    <center>
+        <div id="content">
+            <h1>小光桌面郵貼<br><i>(Hikaru's Aizawa Desktop Widget)</i></h1>
+            <img src="img/application_intro.png">
+            <br>
+            <br>
+            <p>Welcome to the widget installation guide.</p>
+            <p><strong>Step 1:</strong> Download Microsoft Silverlight:</p>
+            <table>
+                <tr>
+                    <td>Windows x86</td>
+                    <td><a href="res/Silverlight_x32.exe">Silverlight_x32.exe</a><td>
+                </tr>
+                <tr>
+                    <td>Windows x86_64</td>
+                    <td><a href="res/Silverlight_x64.exe">Silverlight_x64.exe</a><td>
+                </tr>
+                <tr>
+                    <td>MacOS</td>
+                    <td><a href="res/Silverlight.dmg">Silverlight.dmg</a><td>
+                </tr>
+            </table>
+            <p><strong>Step 2:</strong> Open this page in a Silverlight-compatible browser (e.g. IE)</p>
+            <details>
+                <summary>Supported Silverlight versions by desktop platform</summary>
+                <img src="img/support.png">
+            </details>
+            <p><strong>Step 3:</strong> Right click on the object in the frame below and then click on "Install 小光桌面郵貼 on this computer...":</p>
+            <center>
+                <div id="silverlight">
+                    <object data="data:application/x-silverlight-2," type="application/x-silverlight-2" width="250px" height="200px">
+                        <param name="source" value="res/hikaru_app.xap" />
+                        <param name="onError" value="onSilverlightError" />
+                        <param name="background" value="white" />
+                        <param name="minRuntimeVersion" value="4.0.50826.0" />
+                        <param name="autoUpgrade" value="true" />
+                    </object>
+                </div>
+            </center>
+            <p><i>If you see a pic with a sleeping Hikaru, it means something went wrong or Silverlight is not installed.</i></p>
+            <p><strong>Screenshot:</strong></p>
+            <img src="img/screen.png">
+        </div>
+        <div id="footer">
+            This lostmedia was found through the efforts of <a href="https://moeverse.xyz" target="_blank">Moeverse</a>, <a href="https://timofei302.github.io" target="_blank">Timofei302</a> & <a href="https://lgrn-arts.ch" target="_blank">LGRN Arts</a>.<br>
+            Copyright © 2010 Microsoft Corporation.
+        </div>
+    </center>
+    <style>
+        img {
+            pointer-events: none;
+        }
+
+        body {
+            background-image: url("img/bg.jpg");
+            background-color: #fcfdff;
+            background-repeat: repeat-x;
+            margin:0;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            color: #1792DB;
+        }
+        #content {
+            width: 800px;
+            min-height: 200px;
+            border-radius: 10px 10px 0 0;
+            padding: 10px;
+            text-align: left;
+            margin: 10px 0 0 0;
+        }
+        #footer {
+            font-size: 13px;
+            width: 800px;
+            border-radius: 0 0 10px 10px;
+            padding: 30px 10px;
+            text-align: center;
+            margin: 0 0 10px 0;
+            color: gray;
+        }
+        #silverlight {
+            backdrop-color: #000;
+            background: url("img/error.jpg") no-repeat;
+            width: 250px;
+            height: 200px;
+        }
+        h1 {
+            color: white;
+            text-shadow: 0px 0px 40px #1792DB;
+            text-align: center;
+
+        }
+        img {
+            width: 100%;
+        }
+
+    </style>
+</body>
